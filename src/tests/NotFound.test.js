@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import NotFound from '../pages/NotFound';
 import renderWithRouter from '../renderWithRouter';
 
-describe('Testa o componente NotFound', () => {
+describe('Testa o componente NotFound.js', () => {
   test('É exibido na tela um h2 com o texto "Page requested not found"', () => {
     renderWithRouter(<NotFound />);
     const titleNotFound = screen.getByRole('heading', { name: /not found/i });
